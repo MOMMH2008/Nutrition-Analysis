@@ -6,11 +6,12 @@ Full analysis of food recipes in real time – entity extraction, measure and qu
 ## Features
 
 - [x] Nutrition Analysisg.
-- [x] summary breakdown for entered ingredient in a list
-- [x] total nutrition facts in daily basis
+- [x] Summary breakdown for entered ingredient in a list
+- [x] Total nutrition facts in daily basis
 
 ## Architecture Design Pattern 
 MVVM :- To make separation of concerns
+
 SwiftRX :- To Make app reactive 
 
 ## Third party libraries

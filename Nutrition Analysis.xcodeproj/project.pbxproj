@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25896137527D11ACF1D81C30 /* Pods_Nutrition_Analysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB386D9C9ABBFC5B4549774 /* Pods_Nutrition_Analysis.framework */; };
+		A72B46852690E89E005D8105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46842690E89E005D8105 /* AppDelegate.swift */; };
+		A72B46872690E89E005D8105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46862690E89E005D8105 /* SceneDelegate.swift */; };
+		A72B468C2690E89E005D8105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72B468A2690E89E005D8105 /* Main.storyboard */; };
+		A72B468E2690E8A1005D8105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72B468D2690E8A1005D8105 /* Assets.xcassets */; };
+		A72B46912690E8A1005D8105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72B468F2690E8A1005D8105 /* LaunchScreen.storyboard */; };
+		A72B469C2690E8A1005D8105 /* Nutrition_AnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B469B2690E8A1005D8105 /* Nutrition_AnalysisTests.swift */; };
+		A72B46A72690E8A2005D8105 /* Nutrition_AnalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46A62690E8A2005D8105 /* Nutrition_AnalysisUITests.swift */; };
+		A72B46B92690EF66005D8105 /* NutritionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46B82690EF66005D8105 /* NutritionService.swift */; };
+		A72B46BF2690F310005D8105 /* NutritionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46BE2690F310005D8105 /* NutritionModel.swift */; };
+		A72B46CA26915813005D8105 /* NutritionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46C926915813005D8105 /* NutritionStore.swift */; };
+		A72B46D326916841005D8105 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46D226916841005D8105 /* AnalyzeViewController.swift */; };
+		A72B46DE26916861005D8105 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46DD26916861005D8105 /* SummaryViewController.swift */; };
+		A72B46E326916872005D8105 /* TotalNutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46E226916872005D8105 /* TotalNutritionViewController.swift */; };
+		A72B46F526916C2F005D8105 /* AnalyzeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46F426916C2F005D8105 /* AnalyzeViewModel.swift */; };
+		A72B46FA26916C3E005D8105 /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46F926916C3E005D8105 /* SummaryViewModel.swift */; };
+		A72B46FF26916C4D005D8105 /* TotalNutritionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B46FE26916C4D005D8105 /* TotalNutritionViewModel.swift */; };
+		A72B47052691EC95005D8105 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B47032691EC95005D8105 /* SummaryTableViewCell.swift */; };
+		A72B47062691EC95005D8105 /* SummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72B47042691EC95005D8105 /* SummaryTableViewCell.xib */; };
+		A72B476826931F99005D8105 /* TotalNutritionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B476726931F98005D8105 /* TotalNutritionTableViewCell.swift */; };
+		DA78EB3B40BC13E50E1C33D7 /* Pods_Nutrition_AnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F3C0F6A4C91B18722CC007 /* Pods_Nutrition_AnalysisTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A72B46982690E8A1005D8105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A72B46792690E89E005D8105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A72B46802690E89E005D8105;
+			remoteInfo = "Nutrition Analysis";
+		};
+		A72B46A32690E8A2005D8105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A72B46792690E89E005D8105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A72B46802690E89E005D8105;
+			remoteInfo = "Nutrition Analysis";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2573050F4E7780A2470D8038 /* Pods-Nutrition AnalysisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition AnalysisTests.debug.xcconfig"; path = "Target Support Files/Pods-Nutrition AnalysisTests/Pods-Nutrition AnalysisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2733B9169F51DF873080EB41 /* Pods-Nutrition Analysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition Analysis.release.xcconfig"; path = "Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis.release.xcconfig"; sourceTree = "<group>"; };
+		2DE13F8B1DB30AB1DCA24905 /* Pods-Nutrition Analysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition Analysis.debug.xcconfig"; path = "Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis.debug.xcconfig"; sourceTree = "<group>"; };
+		2FB386D9C9ABBFC5B4549774 /* Pods_Nutrition_Analysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrition_Analysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72B46812690E89E005D8105 /* Nutrition Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nutrition Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72B46842690E89E005D8105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A72B46862690E89E005D8105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A72B468B2690E89E005D8105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A72B468D2690E8A1005D8105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A72B46902690E8A1005D8105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A72B46922690E8A1005D8105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72B46972690E8A1005D8105 /* Nutrition AnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nutrition AnalysisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72B469B2690E8A1005D8105 /* Nutrition_AnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition_AnalysisTests.swift; sourceTree = "<group>"; };
+		A72B469D2690E8A1005D8105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72B46A22690E8A2005D8105 /* Nutrition AnalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nutrition AnalysisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72B46A62690E8A2005D8105 /* Nutrition_AnalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition_AnalysisUITests.swift; sourceTree = "<group>"; };
+		A72B46A82690E8A2005D8105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72B46B82690EF66005D8105 /* NutritionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionService.swift; sourceTree = "<group>"; };
+		A72B46BE2690F310005D8105 /* NutritionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionModel.swift; sourceTree = "<group>"; };
+		A72B46C926915813005D8105 /* NutritionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionStore.swift; sourceTree = "<group>"; };
+		A72B46D226916841005D8105 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
+		A72B46DD26916861005D8105 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		A72B46E226916872005D8105 /* TotalNutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutritionViewController.swift; sourceTree = "<group>"; };
+		A72B46F426916C2F005D8105 /* AnalyzeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewModel.swift; sourceTree = "<group>"; };
+		A72B46F926916C3E005D8105 /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
+		A72B46FE26916C4D005D8105 /* TotalNutritionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutritionViewModel.swift; sourceTree = "<group>"; };
+		A72B47032691EC95005D8105 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		A72B47042691EC95005D8105 /* SummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryTableViewCell.xib; sourceTree = "<group>"; };
+		A72B476726931F98005D8105 /* TotalNutritionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutritionTableViewCell.swift; sourceTree = "<group>"; };
+		E5F3C0F6A4C91B18722CC007 /* Pods_Nutrition_AnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrition_AnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FC91EAE02ABC73D4AA5284 /* Pods-Nutrition AnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition AnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-Nutrition AnalysisTests/Pods-Nutrition AnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A72B467E2690E89E005D8105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25896137527D11ACF1D81C30 /* Pods_Nutrition_Analysis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B46942690E8A1005D8105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA78EB3B40BC13E50E1C33D7 /* Pods_Nutrition_AnalysisTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B469F2690E8A2005D8105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71FD70AD43E4420E50D83B0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FB386D9C9ABBFC5B4549774 /* Pods_Nutrition_Analysis.framework */,
+				E5F3C0F6A4C91B18722CC007 /* Pods_Nutrition_AnalysisTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3C45FA4B98466CABCC375DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DE13F8B1DB30AB1DCA24905 /* Pods-Nutrition Analysis.debug.xcconfig */,
+				2733B9169F51DF873080EB41 /* Pods-Nutrition Analysis.release.xcconfig */,
+				2573050F4E7780A2470D8038 /* Pods-Nutrition AnalysisTests.debug.xcconfig */,
+				E9FC91EAE02ABC73D4AA5284 /* Pods-Nutrition AnalysisTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A72B46782690E89E005D8105 = {
+			isa = PBXGroup;
+			children = (
+				A72B46832690E89E005D8105 /* Nutrition Analysis */,
+				A72B469A2690E8A1005D8105 /* Nutrition AnalysisTests */,
+				A72B46A52690E8A2005D8105 /* Nutrition AnalysisUITests */,
+				A72B46822690E89E005D8105 /* Products */,
+				A3C45FA4B98466CABCC375DA /* Pods */,
+				71FD70AD43E4420E50D83B0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A72B46822690E89E005D8105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46812690E89E005D8105 /* Nutrition Analysis.app */,
+				A72B46972690E8A1005D8105 /* Nutrition AnalysisTests.xctest */,
+				A72B46A22690E8A2005D8105 /* Nutrition AnalysisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A72B46832690E89E005D8105 /* Nutrition Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46CE26916790005D8105 /* Views */,
+				A72B46BD2690F2EF005D8105 /* Models */,
+				A72B46B72690EF26005D8105 /* Services */,
+				A72B46842690E89E005D8105 /* AppDelegate.swift */,
+				A72B46862690E89E005D8105 /* SceneDelegate.swift */,
+				A72B468A2690E89E005D8105 /* Main.storyboard */,
+				A72B468D2690E8A1005D8105 /* Assets.xcassets */,
+				A72B468F2690E8A1005D8105 /* LaunchScreen.storyboard */,
+				A72B46922690E8A1005D8105 /* Info.plist */,
+			);
+			path = "Nutrition Analysis";
+			sourceTree = "<group>";
+		};
+		A72B469A2690E8A1005D8105 /* Nutrition AnalysisTests */ = {
+			isa = PBXGroup;
+			children = (
+				A72B469B2690E8A1005D8105 /* Nutrition_AnalysisTests.swift */,
+				A72B469D2690E8A1005D8105 /* Info.plist */,
+			);
+			path = "Nutrition AnalysisTests";
+			sourceTree = "<group>";
+		};
+		A72B46A52690E8A2005D8105 /* Nutrition AnalysisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46A62690E8A2005D8105 /* Nutrition_AnalysisUITests.swift */,
+				A72B46A82690E8A2005D8105 /* Info.plist */,
+			);
+			path = "Nutrition AnalysisUITests";
+			sourceTree = "<group>";
+		};
+		A72B46B72690EF26005D8105 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46B82690EF66005D8105 /* NutritionService.swift */,
+				A72B46C926915813005D8105 /* NutritionStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A72B46BD2690F2EF005D8105 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46BE2690F310005D8105 /* NutritionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A72B46CE26916790005D8105 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46CF269167AD005D8105 /* Analyze */,
+				A72B46D0269167B5005D8105 /* Summary */,
+				A72B46D1269167DA005D8105 /* TotalNutrition */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A72B46CF269167AD005D8105 /* Analyze */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46D226916841005D8105 /* AnalyzeViewController.swift */,
+				A72B46F426916C2F005D8105 /* AnalyzeViewModel.swift */,
+			);
+			path = Analyze;
+			sourceTree = "<group>";
+		};
+		A72B46D0269167B5005D8105 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46DD26916861005D8105 /* SummaryViewController.swift */,
+				A72B46F926916C3E005D8105 /* SummaryViewModel.swift */,
+				A72B47032691EC95005D8105 /* SummaryTableViewCell.swift */,
+				A72B47042691EC95005D8105 /* SummaryTableViewCell.xib */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		A72B46D1269167DA005D8105 /* TotalNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				A72B46E226916872005D8105 /* TotalNutritionViewController.swift */,
+				A72B46FE26916C4D005D8105 /* TotalNutritionViewModel.swift */,
+				A72B476726931F98005D8105 /* TotalNutritionTableViewCell.swift */,
+			);
+			path = TotalNutrition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A72B46802690E89E005D8105 /* Nutrition Analysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72B46AB2690E8A2005D8105 /* Build configuration list for PBXNativeTarget "Nutrition Analysis" */;
+			buildPhases = (
+				DC2A89F3BBC704F95EC093B5 /* [CP] Check Pods Manifest.lock */,
+				A72B467D2690E89E005D8105 /* Sources */,
+				A72B467E2690E89E005D8105 /* Frameworks */,
+				A72B467F2690E89E005D8105 /* Resources */,
+				753EAF6C1F3590DB9534CD5D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nutrition Analysis";
+			productName = "Nutrition Analysis";
+			productReference = A72B46812690E89E005D8105 /* Nutrition Analysis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A72B46962690E8A1005D8105 /* Nutrition AnalysisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72B46AE2690E8A2005D8105 /* Build configuration list for PBXNativeTarget "Nutrition AnalysisTests" */;
+			buildPhases = (
+				48783E549137C4C4DE57BBE6 /* [CP] Check Pods Manifest.lock */,
+				A72B46932690E8A1005D8105 /* Sources */,
+				A72B46942690E8A1005D8105 /* Frameworks */,
+				A72B46952690E8A1005D8105 /* Resources */,
+				16A5E053CF9C4D753DB27B50 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72B46992690E8A1005D8105 /* PBXTargetDependency */,
+			);
+			name = "Nutrition AnalysisTests";
+			productName = "Nutrition AnalysisTests";
+			productReference = A72B46972690E8A1005D8105 /* Nutrition AnalysisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A72B46A12690E8A2005D8105 /* Nutrition AnalysisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72B46B12690E8A2005D8105 /* Build configuration list for PBXNativeTarget "Nutrition AnalysisUITests" */;
+			buildPhases = (
+				A72B469E2690E8A2005D8105 /* Sources */,
+				A72B469F2690E8A2005D8105 /* Frameworks */,
+				A72B46A02690E8A2005D8105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72B46A42690E8A2005D8105 /* PBXTargetDependency */,
+			);
+			name = "Nutrition AnalysisUITests";
+			productName = "Nutrition AnalysisUITests";
+			productReference = A72B46A22690E8A2005D8105 /* Nutrition AnalysisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A72B46792690E89E005D8105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A72B46802690E89E005D8105 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A72B46962690E8A1005D8105 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A72B46802690E89E005D8105;
+					};
+					A72B46A12690E8A2005D8105 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A72B46802690E89E005D8105;
+					};
+				};
+			};
+			buildConfigurationList = A72B467C2690E89E005D8105 /* Build configuration list for PBXProject "Nutrition Analysis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A72B46782690E89E005D8105;
+			productRefGroup = A72B46822690E89E005D8105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A72B46802690E89E005D8105 /* Nutrition Analysis */,
+				A72B46962690E8A1005D8105 /* Nutrition AnalysisTests */,
+				A72B46A12690E8A2005D8105 /* Nutrition AnalysisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A72B467F2690E89E005D8105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B46912690E8A1005D8105 /* LaunchScreen.storyboard in Resources */,
+				A72B468E2690E8A1005D8105 /* Assets.xcassets in Resources */,
+				A72B47062691EC95005D8105 /* SummaryTableViewCell.xib in Resources */,
+				A72B468C2690E89E005D8105 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B46952690E8A1005D8105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B46A02690E8A2005D8105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16A5E053CF9C4D753DB27B50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition AnalysisTests/Pods-Nutrition AnalysisTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition AnalysisTests/Pods-Nutrition AnalysisTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nutrition AnalysisTests/Pods-Nutrition AnalysisTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48783E549137C4C4DE57BBE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nutrition AnalysisTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		753EAF6C1F3590DB9534CD5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nutrition Analysis/Pods-Nutrition Analysis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2A89F3BBC704F95EC093B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nutrition Analysis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A72B467D2690E89E005D8105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B46D326916841005D8105 /* AnalyzeViewController.swift in Sources */,
+				A72B46FA26916C3E005D8105 /* SummaryViewModel.swift in Sources */,
+				A72B46F526916C2F005D8105 /* AnalyzeViewModel.swift in Sources */,
+				A72B46CA26915813005D8105 /* NutritionStore.swift in Sources */,
+				A72B46852690E89E005D8105 /* AppDelegate.swift in Sources */,
+				A72B46B92690EF66005D8105 /* NutritionService.swift in Sources */,
+				A72B46E326916872005D8105 /* TotalNutritionViewController.swift in Sources */,
+				A72B46BF2690F310005D8105 /* NutritionModel.swift in Sources */,
+				A72B476826931F99005D8105 /* TotalNutritionTableViewCell.swift in Sources */,
+				A72B46FF26916C4D005D8105 /* TotalNutritionViewModel.swift in Sources */,
+				A72B46DE26916861005D8105 /* SummaryViewController.swift in Sources */,
+				A72B47052691EC95005D8105 /* SummaryTableViewCell.swift in Sources */,
+				A72B46872690E89E005D8105 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B46932690E8A1005D8105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B469C2690E8A1005D8105 /* Nutrition_AnalysisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B469E2690E8A2005D8105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B46A72690E8A2005D8105 /* Nutrition_AnalysisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72B46992690E8A1005D8105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A72B46802690E89E005D8105 /* Nutrition Analysis */;
+			targetProxy = A72B46982690E8A1005D8105 /* PBXContainerItemProxy */;
+		};
+		A72B46A42690E8A2005D8105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A72B46802690E89E005D8105 /* Nutrition Analysis */;
+			targetProxy = A72B46A32690E8A2005D8105 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A72B468A2690E89E005D8105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72B468B2690E89E005D8105 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A72B468F2690E8A1005D8105 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72B46902690E8A1005D8105 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A72B46A92690E8A2005D8105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A72B46AA2690E8A2005D8105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A72B46AC2690E8A2005D8105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE13F8B1DB30AB1DCA24905 /* Pods-Nutrition Analysis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nutrition Analysis/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MOMMH.Nutrition-Analysis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A72B46AD2690E8A2005D8105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2733B9169F51DF873080EB41 /* Pods-Nutrition Analysis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nutrition Analysis/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MOMMH.Nutrition-Analysis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A72B46AF2690E8A2005D8105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2573050F4E7780A2470D8038 /* Pods-Nutrition AnalysisTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nutrition AnalysisTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MOMMH.Nutrition-AnalysisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nutrition Analysis.app/Nutrition Analysis";
+			};
+			name = Debug;
+		};
+		A72B46B02690E8A2005D8105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FC91EAE02ABC73D4AA5284 /* Pods-Nutrition AnalysisTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nutrition AnalysisTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MOMMH.Nutrition-AnalysisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nutrition Analysis.app/Nutrition Analysis";
+			};
+			name = Release;
+		};
+		A72B46B22690E8A2005D8105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nutrition AnalysisUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MOMMH.Nutrition-AnalysisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nutrition Analysis";
+			};
+			name = Debug;
+		};
+		A72B46B32690E8A2005D8105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Nutrition AnalysisUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MOMMH.Nutrition-AnalysisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nutrition Analysis";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A72B467C2690E89E005D8105 /* Build configuration list for PBXProject "Nutrition Analysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72B46A92690E8A2005D8105 /* Debug */,
+				A72B46AA2690E8A2005D8105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72B46AB2690E8A2005D8105 /* Build configuration list for PBXNativeTarget "Nutrition Analysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72B46AC2690E8A2005D8105 /* Debug */,
+				A72B46AD2690E8A2005D8105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72B46AE2690E8A2005D8105 /* Build configuration list for PBXNativeTarget "Nutrition AnalysisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72B46AF2690E8A2005D8105 /* Debug */,
+				A72B46B02690E8A2005D8105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72B46B12690E8A2005D8105 /* Build configuration list for PBXNativeTarget "Nutrition AnalysisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72B46B22690E8A2005D8105 /* Debug */,
+				A72B46B32690E8A2005D8105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A72B46792690E89E005D8105 /* Project object */;
+}
